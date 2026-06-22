@@ -1,0 +1,60 @@
+{
+  "card": {
+    "front": {
+      "cardName": "JANE APPLESEED",
+      "cardDate": "00/00",
+      "cardNumber": "0000 0000 0000 0000"
+    },
+    "back": {
+      "cardCvc": "000"
+    }
+  },
+  "inputs": [
+    {
+      "inputName": "Cardholder Name",
+      "inputType": "text",
+      "inputPlaceholder": "e.g. Jane Appleseed",
+      "inputId": "cardName"
+    },
+    {
+      "inputName": "Card Number",
+      "inputType": "text",
+      "inputPlaceholder": "e.g. 1234 5678 9123 0000",
+      "inputId": "cardNumber"
+    },
+    {
+      "inputName": "CVC",
+      "inputType": "text",
+      "inputPlaceholder": "e.g. 123",
+      "inputId": "cardCvc"
+    }
+  ],
+  "Expectation": {
+    "Name": "EXP. DATE (MM/YY)",
+    "input": [
+      {
+        "inputName": "Card Month",
+        "inputType": "text",
+        "inputPlaceholder": "MM",
+        "inputId": "cardMonth"
+      },
+      {
+        "inputName": "Card Year",
+        "inputType": "text",
+        "inputPlaceholder": "YY",
+        "inputId": "cardYear"
+      }
+    ]
+  },
+  "button": {
+    "text": "Confirm"
+  },
+  "completeState": {
+    "image": "/images/icon-complete.svg",
+    "title": "THANK YOU!",
+    "description": "We've added your card details",
+    "button": {
+      "text": "Continue"
+    }
+  }
+}

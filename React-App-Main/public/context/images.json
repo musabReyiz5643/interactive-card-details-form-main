@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "card-front",
+    "url": "/images/bg-card-front.png"
+  },
+  {
+    "id": 2,
+    "name": "card-back",
+    "url": "/images/bg-card-back.png"
+  },
+  {
+    "id": 3,
+    "name": "card-logo",
+    "url": "/images/card-logo.svg"
+  },
+  {
+    "id": 4,
+    "name": "icon-complete",
+    "url": "/images/icon-complete.svg"
+  }
+]

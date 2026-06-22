@@ -1,0 +1,35 @@
+@layer base {
+    :root {
+        --color-white: hsl(0, 100%, 100%);
+        --color-gray-200: hsl(270, 3%, 87%);
+        --color-gray-400: hsl(212, 12%, 71%);
+        --color-purple-950: hsl(278, 68%, 11%);
+        --color-red-400: hsl(0, 100%, 66%);
+        --color-linear-gradient-active-input-border: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+        --font-family: 'Space Grotesk', sans-serif;
+    }
+
+    body {
+        background: url("../../public/images/bg-main-mobile.png");
+        background-size: 100% auto;
+        background-position: top center;
+        background-repeat: no-repeat;
+        font-family: var(--font-family);
+    }
+
+    .front-card {
+        background: url("../../public/images/bg-card-front.png");
+        background-size: 100% 100%;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    @media (min-width: 768px) {
+        body {
+            background: url("../../public/images/bg-main-desktop.png");
+            background-size: auto 100%;
+            background-position: left top;
+            background-repeat: no-repeat;
+        }
+    }
+}
