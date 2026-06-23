@@ -18,7 +18,7 @@ const MainForm = () => {
 
   const getData = async () => {
     try {
-      const response = await fetch("../context/context.json");
+      const response = await fetch("/context/context.json");
       const res_data = await response.json();
       setData(res_data);
     } catch (error) {

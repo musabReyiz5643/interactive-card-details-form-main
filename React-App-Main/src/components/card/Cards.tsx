@@ -24,7 +24,7 @@ const Cards = () => {
 
     const getCardDetails = async () => {
         try {
-            const response = await fetch("../public/context/context.json")
+            const response = await fetch("/context/context.json")
             const data = await response.json()
             setCardDetails(data)
         } catch (error) {
