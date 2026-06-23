@@ -12,7 +12,7 @@ const Cards = () => {
 
     const getImages = async () => {
         try {
-            const response = await fetch("../public/context/images.json")
+            const response = await fetch("/context/images.json")
             const data = await response.json()
             setImages(data)
         } catch (error) {
@@ -53,7 +53,7 @@ const Cards = () => {
     return (
         <div className="w-full flex flex-col-reverse md:flex-col gap-0 md:gap-4 ">
             <div className="max-w-[80%] w-full h-full min-h-40 md:min-h-65 front-card p-5 md:p-10 rounded-lg z-10 -translate-y-15 ">
-                {!isLoadingImage && <img src={images[2].url} alt={images[2].name} className="w-10 md:w-20 mb-5" />}
+                {!isLoadingImage && images[2] && <img src={images[2].url} alt={images[2].name} className="w-10 md:w-20 mb-5" />}
                 {
                     isLoadingCardDetails ?
                         <p>Loading...</p>
@@ -71,7 +71,7 @@ const Cards = () => {
             </div>
             <div className="w-full flex items-start justify-end">
                 <div className="w-full max-w-[80%] h-full relative">
-                    {!isLoadingImage && <img src={images[1].url} alt={images[1].name} className="w-full" />}
+                    {!isLoadingImage && images[1] && <img src={images[1].url} alt={images[1].name} className="w-full" />}
                     <span className="absolute top-1/2 right-10 md:right-15 -translate-y-1/2 text-white text-[10px] md:text-base tracking-widest font-normal">{!watchData?.CVC ? cardDetails?.card.back.cardCvc : watchData?.CVC}</span>
                 </div>
             </div>
